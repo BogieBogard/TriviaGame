@@ -71,17 +71,72 @@ $("#nextButton").on("click", function (event) {
             document.getElementById("answerResponse").innerHTML = ("WRONG!")
         });
         $("#answerChoiceB").on("click", function (event) {
-            document.getElementById("answerResponse").innerHTML = ("WRONG!")
-        });
-        $("#answerChoiceC").on("click", function (event) {
             document.getElementById("answerResponse").innerHTML = ("That's correct!")
         });
+        $("#answerChoiceC").on("click", function (event) {
+            document.getElementById("answerResponse").innerHTML = ("WRONG!")
+        });
         $("#answerChoiceD").on("click", function (event) {
-            document.getElementById("answerResponse").innerHTML = ("WRONG!") 
+            document.getElementById("answerResponse").innerHTML = ("WRONG!")
         });
 
-        
+        // On click function for the 'Next' button for Question 4
+        $("#nextButton").on("click", function (event) {
+            // Display the second question's data
+            document.getElementById("questionNumberAndDescription").innerHTML = ("'Of all the gin joints in all the world and she had to walk into mine.'");
 
+            // Display the available choices
+            document.getElementById("answerChoiceA").innerHTML = ("A. Sunset Boulevard");
+            document.getElementById("answerChoiceB").innerHTML = ("B. 12 Angry Men");
+            document.getElementById("answerChoiceC").innerHTML = ("C. A Streetcar Named Desire");
+            document.getElementById("answerChoiceD").innerHTML = ("D. Casablanca");
+
+            // Display the questions left
+            document.getElementById("questionNumber").innerHTML = ("Question 4 of 10");
+
+            // On click functions for each multiple choice question
+            $("#answerChoiceA").on("click", function (event) {
+                document.getElementById("answerResponse").innerHTML = ("WRONG!")
+            });
+            $("#answerChoiceB").on("click", function (event) {
+                document.getElementById("answerResponse").innerHTML = ("WRONG!")
+            });
+            $("#answerChoiceC").on("click", function (event) {
+                document.getElementById("answerResponse").innerHTML = ("WRONG!")
+            });
+            $("#answerChoiceD").on("click", function (event) {
+                document.getElementById("answerResponse").innerHTML = ("That's correct!!")
+            });
+
+            // On click function for the 'Next' button for Question 5
+            $("#nextButton").on("click", function (event) {
+                // Display the second question's data
+                document.getElementById("questionNumberAndDescription").innerHTML = ("'Gentlemen, there's no fighting in the war room!");
+
+                // Display the available choices
+                document.getElementById("answerChoiceA").innerHTML = ("A. Badlands");
+                document.getElementById("answerChoiceB").innerHTML = ("B. Dr. Strangelove Or How I Learned to Stop Worrying and Love the Bomb");
+                document.getElementById("answerChoiceC").innerHTML = ("C. Some Like It Hot");
+                document.getElementById("answerChoiceD").innerHTML = ("D. Goldfinger");
+
+                // Display the questions left
+                document.getElementById("questionNumber").innerHTML = ("Question 5 of 10");
+
+                // On click functions for each multiple choice question
+                $("#answerChoiceA").on("click", function (event) {
+                    document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                });
+                $("#answerChoiceB").on("click", function (event) {
+                    document.getElementById("answerResponse").innerHTML = ("That's correct!")
+                });
+                $("#answerChoiceC").on("click", function (event) {
+                    document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                });
+                $("#answerChoiceD").on("click", function (event) {
+                    document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                });
+            });
+        });
     });
 });
 
