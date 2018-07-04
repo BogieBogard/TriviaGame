@@ -111,7 +111,7 @@ $("#nextButton").on("click", function (event) {
             // On click function for the 'Next' button for Question 5
             $("#nextButton").on("click", function (event) {
                 // Display the second question's data
-                document.getElementById("questionNumberAndDescription").innerHTML = ("'Gentlemen, there's no fighting in the war room!");
+                document.getElementById("questionNumberAndDescription").innerHTML = ("'Gentlemen, you can't fight in here! This is the War Room!");
 
                 // Display the available choices
                 document.getElementById("answerChoiceA").innerHTML = ("A. Badlands");
@@ -134,6 +134,150 @@ $("#nextButton").on("click", function (event) {
                 });
                 $("#answerChoiceD").on("click", function (event) {
                     document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                });
+                // On click function for the 'Next' button for Question 6
+                $("#nextButton").on("click", function (event) {
+                    // Display the second question's data
+                    document.getElementById("questionNumberAndDescription").innerHTML = ("'We're the middle children of history, man. No purpose or place. We have no Great War. No Great Depression. Our great war is a spiritual war. Our great depression is our lives.'");
+
+                    // Display the available choices
+                    document.getElementById("answerChoiceA").innerHTML = ("A. Fight Club");
+                    document.getElementById("answerChoiceB").innerHTML = ("B. The Shawshank Redemption");
+                    document.getElementById("answerChoiceC").innerHTML = ("C. Seven");
+                    document.getElementById("answerChoiceD").innerHTML = ("D. Dazed and Confused");
+
+                    // Display the questions left
+                    document.getElementById("questionNumber").innerHTML = ("Question 6 of 10");
+
+                    // On click functions for each multiple choice question
+                    $("#answerChoiceA").on("click", function (event) {
+                        document.getElementById("answerResponse").innerHTML = ("That's correct!")
+                    });
+                    $("#answerChoiceB").on("click", function (event) {
+                        document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                    });
+                    $("#answerChoiceC").on("click", function (event) {
+                        document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                    });
+                    $("#answerChoiceD").on("click", function (event) {
+                        document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                    });
+
+                    // On click function for the 'Next' button for Question 7
+                    $("#nextButton").on("click", function (event) {
+                        // Display the second question's data
+                        document.getElementById("questionNumberAndDescription").innerHTML = ("'There is a difference between knowing the path and walking the path.'");
+
+                        // Display the available choices
+                        document.getElementById("answerChoiceA").innerHTML = ("A. Clueless");
+                        document.getElementById("answerChoiceB").innerHTML = ("B. Pulp Fiction");
+                        document.getElementById("answerChoiceC").innerHTML = ("C. The Matrix");
+                        document.getElementById("answerChoiceD").innerHTML = ("D. Titanic");
+
+                        // Display the questions left
+                        document.getElementById("questionNumber").innerHTML = ("Question 7 of 10");
+
+                        // On click functions for each multiple choice question
+                        $("#answerChoiceA").on("click", function (event) {
+                            document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                        });
+                        $("#answerChoiceB").on("click", function (event) {
+                            document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                        });
+                        $("#answerChoiceC").on("click", function (event) {
+                            document.getElementById("answerResponse").innerHTML = ("That's correct!")
+                        });
+                        $("#answerChoiceD").on("click", function (event) {
+                            document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                        });
+
+                        // On click function for the 'Next' button for Question 8
+                        $("#nextButton").on("click", function (event) {
+                            // Display the second question's data
+                            document.getElementById("questionNumberAndDescription").innerHTML = ("'Your scientists were so preoccupied with whether they could, they didn't stop to think if they should.'");
+
+                            // Display the available choices
+                            document.getElementById("answerChoiceA").innerHTML = ("A. Jurassic Park");
+                            document.getElementById("answerChoiceB").innerHTML = ("B. Terminator");
+                            document.getElementById("answerChoiceC").innerHTML = ("C. The Lion King");
+                            document.getElementById("answerChoiceD").innerHTML = ("D. There Will Be Blood");
+
+                            // Display the questions left
+                            document.getElementById("questionNumber").innerHTML = ("Question 8 of 10");
+
+                            // On click functions for each multiple choice question
+                            $("#answerChoiceA").on("click", function (event) {
+                                document.getElementById("answerResponse").innerHTML = ("That's correct!")
+                            });
+                            $("#answerChoiceB").on("click", function (event) {
+                                document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                            });
+                            $("#answerChoiceC").on("click", function (event) {
+                                document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                            });
+                            $("#answerChoiceD").on("click", function (event) {
+                                document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                            });
+
+                            // On click function for the 'Next' button for Question 9
+                            $("#nextButton").on("click", function (event) {
+                                // Display the second question's data
+                                document.getElementById("questionNumberAndDescription").innerHTML = ("'I can't really remember when I last had any hope, and I certainly can't remember when anyone else did either because really, since women stopped being able to have babies, what's left to hope for?'");
+
+                                // Display the available choices
+                                document.getElementById("answerChoiceA").innerHTML = ("A. Pan's Labyrinth");
+                                document.getElementById("answerChoiceB").innerHTML = ("B. Spirited Away");
+                                document.getElementById("answerChoiceC").innerHTML = ("C. No Country for Old Men");
+                                document.getElementById("answerChoiceD").innerHTML = ("D. Children of Men");
+
+                                // Display the questions left
+                                document.getElementById("questionNumber").innerHTML = ("Question 9 of 10");
+
+                                // On click functions for each multiple choice question
+                                $("#answerChoiceA").on("click", function (event) {
+                                    document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                                });
+                                $("#answerChoiceB").on("click", function (event) {
+                                    document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                                });
+                                $("#answerChoiceC").on("click", function (event) {
+                                    document.getElementById("answerResponse").innerHTML = ("That's correct!")
+                                });
+                                $("#answerChoiceD").on("click", function (event) {
+                                    document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                                });
+                            });
+
+                            // On click function for the 'Next' button for Question 10
+                            $("#nextButton").on("click", function (event) {
+                                // Display the second question's data
+                                document.getElementById("questionNumberAndDescription").innerHTML = ("'I could die right now, Clem. I'm just... happy. I'm exactly where I want to be.'");
+
+                                // Display the available choices
+                                document.getElementById("answerChoiceA").innerHTML = ("A. Eternal Sunshine of the Spotless Mind");
+                                document.getElementById("answerChoiceB").innerHTML = ("B. Memento");
+                                document.getElementById("answerChoiceC").innerHTML = ("C. Almost Famous");
+                                document.getElementById("answerChoiceD").innerHTML = ("D. Brokeback Mountain");
+
+                                // Display the questions left
+                                document.getElementById("questionNumber").innerHTML = ("Question 10 of 10");
+
+                                // On click functions for each multiple choice question
+                                $("#answerChoiceA").on("click", function (event) {
+                                    document.getElementById("answerResponse").innerHTML = ("That's correct!")
+                                });
+                                $("#answerChoiceB").on("click", function (event) {
+                                    document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                                });
+                                $("#answerChoiceC").on("click", function (event) {
+                                    document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                                });
+                                $("#answerChoiceD").on("click", function (event) {
+                                    document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                                });
+                            });
+                        });
+                    });
                 });
             });
         });
