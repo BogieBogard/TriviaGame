@@ -1,3 +1,6 @@
+// Declare variables to measure the user's correct answers
+var correctAnswer;
+
 // Display the first question's data
 document.getElementById("questionNumberAndDescription").innerHTML = ("What classic science fiction film features an artifical intelligence anatonogistist named 'HAL'?");
 
@@ -24,6 +27,7 @@ $("#answerChoiceD").on("click", function (event) {
     document.getElementById("answerResponse").innerHTML = ("WRONG!")
 });
 
+// Each additional question will be nested in the click function of the previous question so that the next question 
 // On click function for the 'Next' button for Question 2
 $("#nextButton").on("click", function (event) {
     // Display the second question's data
@@ -257,6 +261,7 @@ $("#nextButton").on("click", function (event) {
                                     document.getElementById("answerChoiceB").innerHTML = ("B. Memento");
                                     document.getElementById("answerChoiceC").innerHTML = ("C. Almost Famous");
                                     document.getElementById("answerChoiceD").innerHTML = ("D. Brokeback Mountain");
+                                    document.getElementById("finalScore").innerHTML = ("View Final Score");
 
                                     // Display the questions left
                                     document.getElementById("questionNumber").innerHTML = ("Question 10 of 10");
@@ -273,6 +278,11 @@ $("#nextButton").on("click", function (event) {
                                     });
                                     $("#answerChoiceD").on("click", function (event) {
                                         document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                                    
+                                        // On click function to see the final score
+                                        $("#finalScore").on("click", function (event) {
+
+                                        });
                                     });
                                 });
                             });
@@ -283,8 +293,3 @@ $("#nextButton").on("click", function (event) {
         });
     });
 });
-
-
-
-
-
