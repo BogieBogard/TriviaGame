@@ -1,8 +1,20 @@
 // Declare variables to measure the user's correct answers
-var correctAnswer;
+var correctAnswer = 0;
 
 // Display the first question's data
 document.getElementById("questionNumberAndDescription").innerHTML = ("What classic science fiction film features an artifical intelligence anatonogistist named 'HAL'?");
+
+// Display and change the seconds left
+setTimeout(oneSecond, 1000 * 1);
+setTimeout(twoSeconds, 1000 * 2);
+
+function oneSecond() {
+    $("#secondsLeft").html("<h3>29 Seconds Left</h3>");
+}
+
+function twoSeconds() {
+    $("#secondsLeft").html("<h3>28 Seconds Left</h3>");
+}
 
 // Display the available choices
 document.getElementById("answerChoiceA").innerHTML = ("A. 2001: A Space Odyssey");
@@ -13,9 +25,11 @@ document.getElementById("answerChoiceD").innerHTML = ("D. Blade Runner");
 // Display the questions left
 document.getElementById("questionNumber").innerHTML = ("Question 1 of 10");
 
-// On click functions for each multiple choice question
+// On click functions for each multiple choice question and if the correct answer is selected then add one to the user's score
 $("#answerChoiceA").on("click", function (event) {
-    document.getElementById("answerResponse").innerHTML = ("That's correct!")
+    document.getElementById("answerResponse").innerHTML = ("That's correct!");
+    correctAnswer = 1;
+    console.log(correctAnswer);
 });
 $("#answerChoiceB").on("click", function (event) {
     document.getElementById("answerResponse").innerHTML = ("WRONG!")
@@ -26,6 +40,16 @@ $("#answerChoiceC").on("click", function (event) {
 $("#answerChoiceD").on("click", function (event) {
     document.getElementById("answerResponse").innerHTML = ("WRONG!")
 });
+
+// Regardless of what answer is choosen freeze the other click buttons so that the user can only guess once.
+var cancelOtherChoicesA = document.getElementById("answerChoiceA");
+
+if (cancelOtherChoicesA.clicked === true) {
+    console.log("test!");
+    $("#answerChoiceB").on("click", function (event) {});
+    $("#answerChoiceC").on("click", function (event) {});
+    $("#answerChoiceD").on("click", function (event) {});
+}
 
 // Each additional question will be nested in the click function of the previous question so that the next question 
 // On click function for the 'Next' button for Question 2
@@ -265,6 +289,9 @@ $("#nextButton").on("click", function (event) {
 
                                     // Display the questions left
                                     document.getElementById("questionNumber").innerHTML = ("Question 10 of 10");
+
+                                    // Get rid of the Next Question div
+                                    document.getElementById("nextButton").innerHTML = ("");
 
                                     // On click functions for each multiple choice question
                                     $("#answerChoiceA").on("click", function (event) {
