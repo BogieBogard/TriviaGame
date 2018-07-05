@@ -246,34 +246,34 @@ $("#nextButton").on("click", function (event) {
                                 $("#answerChoiceD").on("click", function (event) {
                                     document.getElementById("answerResponse").innerHTML = ("WRONG!")
                                 });
-                            });
 
-                            // On click function for the 'Next' button for Question 10
-                            $("#nextButton").on("click", function (event) {
-                                // Display the second question's data
-                                document.getElementById("questionNumberAndDescription").innerHTML = ("'I could die right now, Clem. I'm just... happy. I'm exactly where I want to be.'");
+                                // On click function for the 'Next' button for Question 10
+                                $("#nextButton").on("click", function (event) {
+                                    // Display the second question's data
+                                    document.getElementById("questionNumberAndDescription").innerHTML = ("'I could die right now, Clem. I'm just... happy. I'm exactly where I want to be.'");
 
-                                // Display the available choices
-                                document.getElementById("answerChoiceA").innerHTML = ("A. Eternal Sunshine of the Spotless Mind");
-                                document.getElementById("answerChoiceB").innerHTML = ("B. Memento");
-                                document.getElementById("answerChoiceC").innerHTML = ("C. Almost Famous");
-                                document.getElementById("answerChoiceD").innerHTML = ("D. Brokeback Mountain");
+                                    // Display the available choices
+                                    document.getElementById("answerChoiceA").innerHTML = ("A. Eternal Sunshine of the Spotless Mind");
+                                    document.getElementById("answerChoiceB").innerHTML = ("B. Memento");
+                                    document.getElementById("answerChoiceC").innerHTML = ("C. Almost Famous");
+                                    document.getElementById("answerChoiceD").innerHTML = ("D. Brokeback Mountain");
 
-                                // Display the questions left
-                                document.getElementById("questionNumber").innerHTML = ("Question 10 of 10");
+                                    // Display the questions left
+                                    document.getElementById("questionNumber").innerHTML = ("Question 10 of 10");
 
-                                // On click functions for each multiple choice question
-                                $("#answerChoiceA").on("click", function (event) {
-                                    document.getElementById("answerResponse").innerHTML = ("That's correct!")
-                                });
-                                $("#answerChoiceB").on("click", function (event) {
-                                    document.getElementById("answerResponse").innerHTML = ("WRONG!")
-                                });
-                                $("#answerChoiceC").on("click", function (event) {
-                                    document.getElementById("answerResponse").innerHTML = ("WRONG!")
-                                });
-                                $("#answerChoiceD").on("click", function (event) {
-                                    document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                                    // On click functions for each multiple choice question
+                                    $("#answerChoiceA").on("click", function (event) {
+                                        document.getElementById("answerResponse").innerHTML = ("That's correct!")
+                                    });
+                                    $("#answerChoiceB").on("click", function (event) {
+                                        document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                                    });
+                                    $("#answerChoiceC").on("click", function (event) {
+                                        document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                                    });
+                                    $("#answerChoiceD").on("click", function (event) {
+                                        document.getElementById("answerResponse").innerHTML = ("WRONG!")
+                                    });
                                 });
                             });
                         });
