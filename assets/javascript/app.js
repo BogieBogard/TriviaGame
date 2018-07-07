@@ -22,8 +22,6 @@ var answerChoicesQuestion8 = ["A. Jurassic Park", "B. Terminator", "C. Edge of T
 var answerChoicesQuestion9 = ["A. Pan's Labyrinth", "B. Spirited Away", "C. No Country for Old Men", "D. Children of Men"];
 var answerChoicesQuestion10 = ["A. Eternal Sunshine of the Spotless Mind", "B. Memento", "C. Almost Famous", "D. Brokeback Mountain"];
 
-// Declaring variables used for measuring the user's score
-var correctAnswers = 0;
 
 $("#quizContent").hide();
 
@@ -89,5 +87,12 @@ $("#beginQuiz").on("click", function() {
 
     // Displays the full quiz questions and answers
     $("#quizContent").show();
+
+    // Function for determining the user's score
+    function calculateScore(){
+        var correctAnswers = 0;
+        var correctAnswer1 = document.quizForm.question1.value;
+        console.log(correctAnswer1);
+    }
 
 });
