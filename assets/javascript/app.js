@@ -1,4 +1,4 @@
-// Question list
+// Quiz Content
 var questionList = [
 "What classic science fiction film features an artifical intelligence anatonogistist named 'HAL'?", 
 "What crime thriller film features a rat in the mob and a rat in the police department?",
@@ -22,6 +22,10 @@ var answerChoicesQuestion8 = ["A. Jurassic Park", "B. Terminator", "C. Edge of T
 var answerChoicesQuestion9 = ["A. Pan's Labyrinth", "B. Spirited Away", "C. No Country for Old Men", "D. Children of Men"];
 var answerChoicesQuestion10 = ["A. Eternal Sunshine of the Spotless Mind", "B. Memento", "C. Almost Famous", "D. Brokeback Mountain"];
 
+// Declaring variables used for measuring the user's score
+var correctAnswers = 0;
+
+$("#quizContent").hide();
 
 $("#beginQuiz").on("click", function() {
     // Hide Start Button
@@ -57,7 +61,7 @@ $("#beginQuiz").on("click", function() {
       number--;
 
       //  Show the number in the #show-number tag.
-      $("#timeDisplay").html("<h2>" + number + "</h2>");
+      $("#timeDisplay").html("<h3>" + number + " Seconds Left!" + "</h3>");
 
 
       //  Once number hits zero...
@@ -66,7 +70,7 @@ $("#beginQuiz").on("click", function() {
         //  ...run the stop function.
         stop();
 
-        //  Alert the user that time is up.
+        //  Display the user's score when time is up
         alert("Time Up!");
       }
     }
@@ -82,5 +86,8 @@ $("#beginQuiz").on("click", function() {
 
     //  Execute the run function.
     run();
+
+    // Displays the full quiz questions and answers
+    $("#quizContent").show();
 
 });
