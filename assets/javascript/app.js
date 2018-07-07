@@ -4,12 +4,10 @@ $("#beginQuiz").on("click", function() {
     // Hide Start Button
     $("#beginQuiz").hide();
 
-    //  Interval Demonstration
-    //  Set our number counter to 121.
+    //  Interval Demonstration, set our number counter to 121.
     var number = 121;
 
-    //  Variable that will hold our interval ID when we execute
-    //  the "run" function
+    //  Variable that will hold our interval ID when we execute the "run" function
     var intervalId;
 
     //  When the stop button gets clicked, run the stop function.
@@ -18,9 +16,7 @@ $("#beginQuiz").on("click", function() {
     //  When the resume button gets clicked, execute the run function.
     $("#resume").on("click", run);
 
-    //  The run function sets an interval
-    //  that runs the decrement function once a second.
-    //  *****BUG FIX******** 
+    //  The run function sets an interval that runs the decrement function once a second.
     //  Clearing the intervalId prior to setting our new intervalId will not allow multiple instances.
     function run() {
       clearInterval(intervalId);
@@ -29,18 +25,14 @@ $("#beginQuiz").on("click", function() {
 
     //  The decrement function.
     function decrement() {
-
-      //  Decrease number by one.
       number--;
 
       //  Show the number in the #show-number tag.
       $("#timeDisplay").html("<h3>" + number + " Seconds Left!" + "</h3>");
 
 
-      //  Once number hits zero...
+      //  Once number hits zero stop the function
       if (number === 0) {
-
-        //  ...run the stop function.
         stop();
 
         //  Display the user's score when time is up
@@ -50,10 +42,6 @@ $("#beginQuiz").on("click", function() {
 
     //  The stop function
     function stop() {
-
-      //  Clears our intervalId
-      //  We just pass the name of the interval
-      //  to the clearInterval function.
       clearInterval(intervalId);
     }
 
@@ -63,13 +51,13 @@ $("#beginQuiz").on("click", function() {
     // Displays the full quiz questions and answers
     $("#quizContent").show();
 
-    // Function for determining the user's score
-    function calculateScore(){
-        var correctAnswers = 0;
-        $('input[name=question1:checked]', '#quizForm').val();
-        console.log()
+    // // Function for determining the user's score
+    // function calculateScore(){
+    //     var correctAnswers = 0;
+    //     $('input[name=question1:checked]', '#quizForm').val();
+    //     console.log()
 
-        //Example for getting the user's selected value $('input[name=radioName]:checked', '#myForm').val()
-    }
+    //     //Example for getting the user's selected value $('input[name=radioName]:checked', '#myForm').val()
+    // }
 
 });
