@@ -58,8 +58,23 @@ $("#beginQuiz").on("click", function() {
     // Currently the submit button restarts the quiz.
     // I'll need to use an event.preventDefault function to fix this.
 
-    // // Function for determining the user's score
-    // function calculateScore(){
-    //     var correctAnswers = 0;
-    //     $('input[name=question1:checked]', '#quizForm').val();
-    //     console.log()
+    // Function for determining the user's score
+    $("#quizForm #q1").on( "click", function() {
+      console.log($( "input:checked").val());
+    });
+
+    $("#quizForm #q2").on("click", function() {
+      console.log($("input:checked").val());
+    });
+
+$("#submitButton").on("click", function() {
+  event.preventDefault();
+  // Declaring elements needed for keeping track of the user's score
+  var correctAnswers = 0;
+
+  
+
+  // $("input[type='radio'][name='2001: A Space Odyssey']:checked").val();
+  // console.log()
+
+})
