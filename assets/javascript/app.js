@@ -51,13 +51,15 @@ $("#beginQuiz").on("click", function() {
     // Displays the full quiz questions and answers
     $("#quizContent").show();
 
+});
+
+    // What's left to program is to keep track of the user's score 
+    // and display that when the user selects the submit button.
+    // Currently the submit button restarts the quiz.
+    // I'll need to use an event.preventDefault function to fix this.
+
     // // Function for determining the user's score
     // function calculateScore(){
     //     var correctAnswers = 0;
     //     $('input[name=question1:checked]', '#quizForm').val();
     //     console.log()
-
-    //     //Example for getting the user's selected value $('input[name=radioName]:checked', '#myForm').val()
-    // }
-
-});
